@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Back_Grounds",
+    "description": "Add a custom background to Google.com",
+    "version": "1.0",
+    "icons": {
+        "16": "/imgs/16px.jpg",
+        "48": "/imgs/48px.jpg",
+        "128": "/imgs/128px.jpg"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "/imgs/16px_.png",
+            "48": "/imgs/48px_.png",
+            "128": "/imgs/128px_.png"
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://www.google.com/*"],
+            "css": ["main.css"]
+        }
+    ]
+}
